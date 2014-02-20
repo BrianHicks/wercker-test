@@ -2,9 +2,6 @@
 box: wercker/python
 build:
   steps:
-    - script:
-        name: install apt dependencies
-        code: sudo apt-get install libreadline-dev
     - pip-install
     - script:
         name: flask tests
